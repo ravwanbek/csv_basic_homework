@@ -12,6 +12,7 @@ def find_number_of_rows(data):
     
     idx=0
     rows=data.split('\n')
+    print(rows)
     
     for x in rows:
         idx+=1
