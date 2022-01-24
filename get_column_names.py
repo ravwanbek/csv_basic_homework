@@ -8,10 +8,9 @@ def get_column_names(data):
         column_names: list of column names
     """
     coloumn=data.split('\n')
-    coloumn_list=coloumn[0].split(',')
+    coloumn_list=coloumn[0].split()
     return coloumn_list
     
     
 # Read the csv file
-f=open('data.csv').read()
-print(get_column_names(f))
+
