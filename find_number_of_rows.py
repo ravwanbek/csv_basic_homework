@@ -21,5 +21,3 @@ def find_number_of_rows(data):
     
 
 # Read the csv file
-f=open('data.csv').read()
-print(find_number_of_rows(f))
