@@ -11,9 +11,9 @@ def find_number_of_rows(data):
     """
     
     idx=0
-    coloumn=data.split('\n')
-    coloumn_len=coloumn[idx].split(',')
-    for x in coloumn:
+    rows=data.split('\n')
+    
+    for x in rows:
         idx+=1
 
     return idx
@@ -21,3 +21,5 @@ def find_number_of_rows(data):
     
 
 # Read the csv file
+f=open('data.csv').read()
+print(find_number_of_rows(f))
