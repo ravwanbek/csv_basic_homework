@@ -10,17 +10,10 @@ def find_number_of_rows(data):
         int: Number of rows.
     """
     
-    idx=-1
     rows=data.split('\n')
-    print(rows)
     
-    for x in rows:
-        idx+=1
-
-    return idx
+    return len(rows)
 
     
 
 # Read the csv file
-f=open('data.csv').read()
-print(find_number_of_rows(f))
